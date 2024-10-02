@@ -22,10 +22,15 @@
 
         <form>
           <!-- Primer row -->
-          <div class="row mb-3">
+          <div class="row">
             <div class="col-5">
               <label for="cardNumber" class="form-label">Card #</label>
-              <input type="text" id="cardNumber" class="form-control" />
+              <input
+                type="text"
+                id="cardNumber"
+                class="form-control"
+                required
+              />
             </div>
             <div class="col-3">
               <label for="cvc" class="form-label">CVC#</label>
@@ -37,7 +42,37 @@
             </div>
           </div>
 
-          <!-- Segundo row -->
+          <!-- segundo row izquierda -->
+
+          <div class="container-fluid d-flex justify-content-between">
+            <div class="row d-inline">
+              <div class="col-12">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" id="firstName" class="form-control" />
+              </div>
+              <div class="col-12">
+                <label for="city" class="form-label">City</label>
+                <input type="text" id="city" class="form-control" />
+              </div>
+              <div class="col-12">
+                <p>We accept:</p>
+                <i class="fa-brands fa-cc-mastercard"></i>
+              </div>
+            </div>
+
+            <!-- segundo row derecha -->
+
+            <div class="row d-inline">
+              <div class="col-12">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" id="lastName" class="form-control" />
+              </div>
+              <div class="col-12"></div>
+              <div class="col-12"></div>
+            </div>
+          </div>
+
+          <!-- Segundo row
           <div class="row mb-3">
             <div class="col">
               <label for="firstName" class="form-label">First Name</label>
@@ -49,7 +84,7 @@
             </div>
           </div>
 
-          <!-- Tercer row -->
+          Tercer row
           <div class="row mb-3">
             <div class="col-5">
               <label for="city" class="form-label">City</label>
@@ -65,7 +100,7 @@
             </div>
           </div>
 
-          <!-- cuarto row -->
+          cuarto row
           <div class="row mb-3">
             <div class="col-2">
                 <p>We accept</p>
@@ -74,7 +109,7 @@
               <p>Message</p>
               <input type="textarea" id="message" class="form-control" />
             </div>
-          </div>
+          </div> -->
         </form>
       </div>
     </div>
