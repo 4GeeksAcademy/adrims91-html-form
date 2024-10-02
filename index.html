@@ -18,13 +18,14 @@
       </div>
 
       <div class="container bg-white">
-        <div class="alert alert-danger m-3">Some fields are missing</div>
+        <div class="alert alert-danger m-1">Some fields are missing</div>
 
         <form>
           <!-- Primer row -->
+           <div class="container-fluid">
           <div class="row">
             <div class="col-5">
-              <label for="cardNumber" class="form-label">Card #</label>
+              <label for="cardNumber" class="form-label"><b>Card #</b></label>
               <input
                 type="text"
                 id="cardNumber"
@@ -33,45 +34,67 @@
               />
             </div>
             <div class="col-3">
-              <label for="cvc" class="form-label">CVC#</label>
+              <label for="cvc" class="form-label"><b>CVC#</b></label>
               <input type="text" id="cvc" class="form-control" />
             </div>
             <div class="col-4">
-              <label for="amount" class="form-label">Amount</label>
+              <label for="amount" class="form-label"><b>Amount</b></label>
               <input type="text" id="amount" class="form-control" />
             </div>
           </div>
-
+        </div>
+      </div>
           <!-- segundo row izquierda -->
 
-          <div class="container-fluid d-flex justify-content-between">
+          <div class="d-flex">
+            <div class="container-fluid">
             <div class="row d-inline">
-              <div class="col-12">
-                <label for="firstName" class="form-label">First Name</label>
+              <div class="col">
+                <label for="firstName" class="form-label"><b>First Name</b></label>
                 <input type="text" id="firstName" class="form-control" />
               </div>
-              <div class="col-12">
-                <label for="city" class="form-label">City</label>
+              <div class="col pt-1">
+                <label for="city" class="form-label"><b>City</b></label>
                 <input type="text" id="city" class="form-control" />
               </div>
-              <div class="col-12">
-                <p>We accept:</p>
+              <div class="col pt-1">
+                <p><b>We accept:</b></p>
                 <i class="fa-brands fa-cc-mastercard"></i>
               </div>
             </div>
-
+          </div>
             <!-- segundo row derecha -->
-
+            <div class="container-fluid">
             <div class="row d-inline">
-              <div class="col-12">
-                <label for="lastName" class="form-label">Last Name</label>
+              <div class="col">
+                <label for="lastName" class="form-label"><b>Last Name</b></label>
                 <input type="text" id="lastName" class="form-control" />
               </div>
-              <div class="col-12"></div>
-              <div class="col-12"></div>
+              <div class="col d-flex">
+                <div class="col-6 pe-2">
+                <label for="select"><b>State</b></label>
+                <select class="form-select" id="select" aria-label="Default select example">
+                  <option selected>Pick a state</option>
+                  <option value="1">Spain</option>
+                  <option value="2">France</option>
+                  <option value="3">Portugal</option>
+                </select>
+              </div>
+              <div class="col-6 ps-2">
+                <label for="postalCode"><b>Postal Code</b></label>
+                <input type="number" id="postalCode" class="form-control">
+              </div>
+            </div>
+            
+              <div class="col">
+                <label for="floatingTextarea"><b>Message</b></label>
+                <textarea class="form-control" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Add any notes here.</label>
+              </div>
             </div>
           </div>
-
+        </div>
+      
           <!-- Segundo row
           <div class="row mb-3">
             <div class="col">
