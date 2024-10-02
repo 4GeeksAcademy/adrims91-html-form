@@ -10,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMX9226nLgrhLNEW73g7gkB/z29cM/aN6xz13t" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   </head>
   <body>
     <div class="container border mt-5">
@@ -40,7 +40,7 @@
             </div>
             <div class="col-4">
               <label for="amount" class="form-label"><b>Amount</b></label>
-              <input type="text" id="amount" class="form-control" />
+              <input type="text" id="amount" class="form-control" required />
             </div>
           </div>
         </div>
@@ -52,15 +52,37 @@
             <div class="row d-inline">
               <div class="col">
                 <label for="firstName" class="form-label"><b>First Name</b></label>
-                <input type="text" id="firstName" class="form-control" />
+                <input type="text" id="firstName" class="form-control" required/>
               </div>
               <div class="col pt-1">
                 <label for="city" class="form-label"><b>City</b></label>
-                <input type="text" id="city" class="form-control" />
+                <input type="text" id="city" class="form-control" required/>
               </div>
               <div class="col pt-1">
                 <p><b>We accept:</b></p>
-                <i class="fa-brands fa-cc-mastercard"></i>
+                <div class="col-5 bg-secondary d-flex">
+                  <div class="container-fluid">
+                    <input class="form-check-input" type="radio" value="" id="mastercard">
+                    <label class="form-check-label" for="mastercard">
+                      <i class="fa-brands fa-cc-mastercard text-white"></i>
+                    </label>
+                  <input class="form-check-input" type="radio" value="" id="visa">
+                    <label class="form-check-label" for="visa">
+                      <i class="fa-brands fa-cc-visa text-white"></i>
+                    </label>
+                    <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="fa-brands fa-cc-diners-club text-white"></i>
+                    </label>
+                    <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      <i class="fa-brands fa-cc-apple-pay text-white"></i>
+                    </label>
+                  </div>
+                  
+
+                
+              </div>
               </div>
             </div>
           </div>
@@ -69,7 +91,7 @@
             <div class="row d-inline">
               <div class="col">
                 <label for="lastName" class="form-label"><b>Last Name</b></label>
-                <input type="text" id="lastName" class="form-control" />
+                <input type="text" id="lastName" class="form-control" required/>
               </div>
               <div class="col d-flex">
                 <div class="col-6 pe-2">
