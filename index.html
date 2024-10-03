@@ -15,12 +15,13 @@
   <body>
     <div class="container border mt-5">
       <div class="bg-light p-3">
+        <div class="container-fluid">
         <h3>Payment Form Example</h3>
+      </div>
       </div>
 
       <div class="container bg-white">
         <div class="alert alert-danger m-2">Some fields are missing</div>
-
         <form>
           <!-- Primer row -->
            <div class="container-fluid">
@@ -28,7 +29,7 @@
             <div class="col-5">
               <label for="cardNumber" class="form-label"><b>Card #</b></label>
               <input
-                type="text"
+                type="number"
                 id="cardNumber"
                 class="form-control"
                 required
@@ -60,8 +61,9 @@
               </div>
               <div class="col pt-1">
                 <p><b>We accept:</b></p>
-                <div class="col-5 bg-secondary d-flex">
-                  <div class="container-fluid">
+                <div class="col-4 bg-secondary d-flex">
+                  <div class="container-fluid p-1">
+                    <div class="container text-center">
                     <input class="form-check-input" type="radio" value="" id="mastercard">
                     <label class="form-check-label" for="mastercard">
                       <i class="fa-brands fa-cc-mastercard text-white"></i>
@@ -78,6 +80,7 @@
                     <label class="form-check-label" for="flexCheckDefault">
                       <i class="fa-brands fa-cc-apple-pay text-white"></i>
                     </label>
+                  </div>
                   </div>
                   
 
@@ -96,7 +99,7 @@
               <div class="col d-flex">
                 <div class="col-6 pe-2">
                 <label for="select"><b>State</b></label>
-                <select class="form-select" id="select" aria-label="Default select example">
+                <select class="form-select" id="select" aria-label="Default select example" required />
                   <option selected>Pick a state</option>
                   <option value="1">Spain</option>
                   <option value="2">France</option>
