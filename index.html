@@ -28,19 +28,23 @@
             <div class="col-5">
               <label for="cardNumber" class="form-label"><b>Card #</b></label>
               <input
-                type="number"
+                type="text"
                 id="cardNumber"
-                class="form-control"
+                class="form-control"pattern="\d{16}"
+                placeholder="XXXXXXXXXXXXXXXX"
                 required
               />
             </div>
             <div class="col-3">
               <label for="cvc" class="form-label"><b>CVC#</b></label>
-              <input type="text" id="cvc" class="form-control" maxlength="3" pattern="\d{3}" required/>
+              <input type="text" id="cvc" class="form-control" maxlength="3" pattern="\d{3}" placeholder="000" required/>
             </div>
             <div class="col-4">
               <label for="amount" class="form-label"><b>Amount</b></label>
-              <input type="text" id="amount" class="form-control" required />
+              <div class="d-flex">
+                <b>$</b>
+                <input type="text" id="amount" class="form-control" placeholder="Amount" required />
+              </div>  
             </div>
           </div>
         </div>
@@ -60,22 +64,22 @@
               </div>
               <div class="col pt-1">
                 <p><b>We accept:</b></p>
-                <div class="col-4 bg-secondary">
-                  <div class="container-fluid">
-                    <div class="container text-center p-1">
-                    <input class="form-check-input small-radio" type="radio" value="" id="mastercard" name="paymentMethod" required>
+                <div class="col-4">
+                  <div class="container container-lg">
+                    <div class="container p-2 bg-secondary">
+                    <input class="form-check-input" type="radio" value="" id="mastercard" name="paymentMethod" required>
                     <label class="form-check-label" for="mastercard">
                       <i class="fa-brands fa-cc-mastercard text-white"></i>
                     </label>
-                  <input class="form-check-input small-radio" type="radio" value="" id="visa" name="paymentMethod">
+                    <input class="form-check-input " type="radio" value="" id="visa" name="paymentMethod">
                     <label class="form-check-label" for="visa">
                       <i class="fa-brands fa-cc-visa text-white"></i>
                     </label>
-                    <input class="form-check-input small-radio" type="radio" value="" id="diners" name="paymentMethod">
+                    <input class="form-check-input" type="radio" value="" id="diners" name="paymentMethod">
                     <label class="form-check-label" for="diners">
                       <i class="fa-brands fa-cc-diners-club text-white"></i>
                     </label>
-                    <input class="form-check-input small-radio" type="radio" value="" id="applePay" name="paymentMethod">
+                    <input class="form-check-input" type="radio" value="" id="applePay" name="paymentMethod">
                     <label class="form-check-label" for="applePay">
                       <i class="fa-brands fa-cc-apple-pay text-white"></i>
                     </label>
