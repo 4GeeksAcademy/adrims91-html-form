@@ -64,20 +64,20 @@
                 <div class="col-4 bg-secondary d-flex">
                   <div class="container-fluid p-1">
                     <div class="container text-center">
-                    <input class="form-check-input" type="radio" value="" id="mastercard">
+                    <input class="form-check-input small-radio" type="radio" value="" id="mastercard" name="paymentMethod" required>
                     <label class="form-check-label" for="mastercard">
                       <i class="fa-brands fa-cc-mastercard text-white"></i>
                     </label>
-                  <input class="form-check-input" type="radio" value="" id="visa">
+                  <input class="form-check-input small-radio" type="radio" value="" id="visa" name="paymentMethod">
                     <label class="form-check-label" for="visa">
                       <i class="fa-brands fa-cc-visa text-white"></i>
                     </label>
-                    <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input small-radio" type="radio" value="" id="diners" name="paymentMethod">
+                    <label class="form-check-label" for="diners">
                       <i class="fa-brands fa-cc-diners-club text-white"></i>
                     </label>
-                    <input class="form-check-input" type="radio" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
+                    <input class="form-check-input small-radio" type="radio" value="" id="applePay" name="paymentMethod">
+                    <label class="form-check-label" for="applePay">
                       <i class="fa-brands fa-cc-apple-pay text-white"></i>
                     </label>
                   </div>
@@ -99,8 +99,8 @@
               <div class="col d-flex">
                 <div class="col-6 pe-2">
                 <label for="select"><b>State</b></label>
-                <select class="form-select" id="select" aria-label="Default select example" required />
-                  <option selected>Pick a state</option>
+                <select class="form-select" id="select" aria-label="Default select example" required>
+                  <option value="">Pick a state</option>
                   <option value="1">Spain</option>
                   <option value="2">France</option>
                   <option value="3">Portugal</option>
