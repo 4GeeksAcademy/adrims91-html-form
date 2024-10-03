@@ -11,16 +11,15 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="container border mt-5">
-      <div class="bg-light p-3">
-        <div class="container-fluid">
+    <div class="container border mt-5 bg-light">
+      <div class="p-3">
         <h3>Payment Form Example</h3>
       </div>
-      </div>
-
       <div class="container bg-white">
+      <div class="container">
         <div class="alert alert-danger m-2">Some fields are missing</div>
         <form>
           <!-- Primer row -->
@@ -61,7 +60,7 @@
               </div>
               <div class="col pt-1">
                 <p><b>We accept:</b></p>
-                <div class="col-4 bg-secondary d-flex">
+                <div class="col-5 bg-secondary">
                   <div class="container-fluid p-1">
                     <div class="container text-center">
                     <input class="form-check-input small-radio" type="radio" value="" id="mastercard" name="paymentMethod" required>
@@ -117,7 +116,7 @@
                 <label for="floatingTextarea">Add any notes here.</label>
               </div>
             </div>
-          
+          </div>
         </div>       
       </div>
       <div class="d-flex justify-content-end bg-light p-3">
